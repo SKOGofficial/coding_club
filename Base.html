@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
     <body>
-        <style> </style>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/egg.js/1.0/egg.min.js"></script>
+        
         <h1> Soham's Countdown DAWG</h1>
         <h1> Idea and partial exectution by NORA Kaup</h1>
         <h2> Going smaller</h2>
@@ -13,11 +15,27 @@
         <p>
             This is my, soham's first attempt at using a java script <br>statement in html context
         </p>
+        <span title="See, this is the tooltip. :)">Move your mouse over me!</span>
+
         <p id ="gemo"></p>
         <img src = "IMG_8417.JPG" height="500">
         <button type="button" onclick="myFunction()">
             <img src = "IMG_8417.JPG" width = "200" alt="BIG DAWG YEAAHAHHAHAHAHAHAHAH">
         </button>
+
+        <marquee behavior="scroll" direction="left" scrollamount="30">🐝 buzz buzz 🐝</marquee>
+        <marquee behavior="scroll" direction="up" scrollamount="30">AHHHH</marquee>
+        <span style="background-color:#FFFF00">"highlighted"</span>
+        <script>
+
+
+var egg = new Egg("a,b", function() {
+  jQuery('#egggif').fadeIn(500, function() {
+    window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+  });
+}).listen();
+
+        </script>
         <script>
             let x, y, z
             x=0;
@@ -30,5 +48,10 @@
             
         
         </script>
+        <script>var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
+            jQuery('#egggif').fadeIn(500, function() {
+              window.setTimeout(function() { jQuery('#egggif').hide(); }, 5000);
+            });
+          }).listen();</script>
     </body>
 </html>
